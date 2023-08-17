@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!--setting up css for title-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css" href="https://fonts.googleapis.com/css?family=Sofia">
+        <title>Cryptid encyclopedia</title>
+         
+        
+    </head>
+    <body>       
+          <!-- Title section-->
+            <header class="header flying-container">
+                <div class="flying-container">
+                    <div class="flying"></div>
+                </div>
+                <h1 style="color:rgb(39, 18, 125); font-size: 40px;"> Cryptid Encyclopedia</h1>
+                <p style="color:rgb(39, 18, 125); font-size: 25px;"> Dive into the world of the unknown and obtain valuable information.
+                </p>
+                <hr>
+            </header>
+            <script src="script.js"></script>
+
+            <!--body backgrouns (eyes)-->
+
+<div class="glowing-circle"></div>
+
+        <!--This selection will be all the categories.//-->
+
+        <!-- Skinwalkers-->
+            <div class="Skinwalker">
+                <h2 style= "font-size: 30px; text-align: auto;"> Skin Walkers </h2>
+                <a href="https://en.wikipedia.org/wiki/Skin-walker">
+                <img src="https://www.abestfashion.com/wp-content/uploads/2022/11/skinwalker-hunched-over-with-wolf-head-featured.jpg" alt="skinwalkers" style="width:200px;height: 150px;"> </a>
+                <figcaption> Shapeshifters </figcaption>
+                <p style="color:whitesmoke; font-size:25px; opacity: 50%;"> Skin walkers have been known to change shapes to lure victims into dangerous and unexpected places </p>
+            </div>
+    <br><br>
+        <!-- La llorona -->
+        <div class="llorona"> 
+            <h3 style= "font-size: 40px; text-align: left;"> La LLorona </h3> 
+            <a href="https://en.wikipedia.org/wiki/La_Llorona">
+            <img src="https://pbs.twimg.com/media/EHy55XqX4AAzvb1.jpg:large" alt="la llorona" style="width:200px; height:150px;"></a>
+            <figcaption>La llorona</figcaption> 
+            <p> la llorona is a legend of a woman who roams the grounds looking for her missing children </p>
+        </div>
+    <br><br>
+        <!-- Sirens -->
+        <div class="sirens">
+            <h4 style= "font-size: 40px; text-align: left;"> Sirens </h4>
+            <a href="https://mythopedia.com/topics/sirens">
+            <img src="https://cdnb.artstation.com/p/assets/images/images/024/524/333/large/sujin-park-.jpg?1582703214" alt="Siren" style="width:200;height: 150px;"> </a>
+            <figcaption> Siren </figcaption>
+            <p> Sirens are deep-sea creatures that lure sailors to their deaths. </p>
+    
+    
+        </div></body>
+    <script>
+    const numflyings = 50;
+    const flyingContainer = document.queryselector('.flying-container');
+
+    for (let i =0; i < numflyings; i++) {
+        const flying = document.createelement('div');
+        flying.classname= 'flying';
+        flying.style.animationdelay = '${math.random() * 5}s';
+        flyingContainer.appendchild(flying);
+    }
+    
+
+    </script></html>
+        
+
+
+

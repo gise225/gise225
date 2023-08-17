@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-image: url("https://i.pinimg.com/originals/0b/15/2d/0b152d0cb68b5bca52132721e9ccc925.jpg");
+    background-repeat: no-repeat; 
+    background-size:cover;
+    position: relative;
+    z-index: -1;
+}
+/* header/title area */
+.header {  
+    height:180px;
+    background-color: rgb(7, 5, 5);
+    margin-bottom:75px;
+    color: rgb(54, 4, 110);
+    text-align: center;
+    font-size: 25px;
+    font-style: oblique; 
+    border: solid 2px;
+    background-attachment: scroll;
+    border-radius: 15px;
+    pointer-events: none; /* Allow clicking through flyings */
+}
+/*area around the rain*/ 
+.flying-container {
+    position:relative;
+    background-color: rgb(0, 0, 0);
+    overflow: visible;
+    z-index: 1; /* Behind header content */
+}
+/*rain itself*/ 
+.flying {
+    width: 1.5px;
+    height: 8px;
+    background-color: rgb(129, 26, 13);
+    position: absolute; 
+    animation: 5.5s rain infinite ; 
+    z-index: -1;0
+}
+@keyframes rain{
+    from {top:0px; translate:(12000%, -4000%) rotate(40deg)} 
+    to {top:200px; translate:(0,0)}   
+}
+/*splash effect*/
+.splash {
+    position:absolute;
+    background-color: red;
+    height:10px;
+    width:40px;
+    margin-left: -40px;
+    margin-top: 20px;
+    border-radius: 50%;
+    animation: 1.5s splash ease-out;
+    animation-delay: 2.5s;
+    opacity: 0;
+}
+@keyframes splash {
+    from {
+        transform: translateY(0) scale(1);
+        opacity: 0;
+    } 
+    to { Transform: translateY(-20) scale(1.2);
+        opacity: 1;
+}
+}
+
+@-webkit-keyframes glowing {
+    from {
+        box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #f0f, 0 0 40px #0ff, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+
+    to {
+        box-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+}
+/* styles the images with a border */
+img {
+    position: relative;
+    top: 50%;  
+    transform: translate(-50%, -50%);
+    left: 50%;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6);
+} 
+.creature {
+    border: 6px black;
+    margin: 20px;
+    padding: 20px;
+}
+figcaption {
+    text-align: center;
+}
+
